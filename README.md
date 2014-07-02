@@ -1,8 +1,8 @@
 sysmon component
 ================
 
-This is a very simple example of CycleServer component. It periodically runs 'ps'
-on the local host and displays the running processes. It only works if installed
+This is a very simple example of a CycleServer component. It periodically runs 'ps'
+on the local host and displays running processes. It only works if installed
 on *nix host.
 
 For more information, see the CycleServer Development Guide.
@@ -11,8 +11,8 @@ For more information, see the CycleServer Development Guide.
 Requirements
 ------------
 
-Using this component requires you have CycleServer 4.5.x installed. This component demonstrates
-how to create basic user interface components and to create a task that runs on a timer.
+This component requires CycleServer 4.5 or higher. It demonstrates how to create basic 
+user interface components and how to create a task that runs on a timer.
 
 Building this component requires [gradle](http://gradle.org)
 
