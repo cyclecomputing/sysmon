@@ -1,0 +1,33 @@
+AdType = "View"
+Name = "Average CPU Usage"
+Id = #53b34dc9-0031-5fc805e6a6d5-0
+ForType = "Sysmon.Process.Reporting"
+DataSourcePlugin = "cycle.app.reporting.historical_datasource"
+Reporting = true
+DataSourceParams = [ \
+    IntegrateFunc="avg@"; \
+    SampleFunc="wavg"; \
+    SampleArgs={AvgCpuUsage, AvgProcessCount}; \
+    PivotOn=User; \
+    Interval=86400; \
+    TimeRange="30d"; \
+]
+Span = "duration"
+Duration = `30d`
+
+AdType = "View"
+Name = "Average Process Count"
+Id = #53b35037-0021-5fc805e6a6d5-0
+ForType = "Sysmon.Process.Reporting"
+DataSourcePlugin = "cycle.app.reporting.historical_datasource"
+Reporting = true
+DataSourceParams = [ \
+    IntegrateFunc="avg@"; \
+    SampleFunc="sum"; \
+    SampleArgs={AvgProcessCount}; \
+    PivotOn=User; \
+    Interval=86400; \
+    TimeRange="30d"; \
+]
+Span = "duration"
+Duration = `30d`

@@ -1,0 +1,36 @@
+AdType = "Application.ChartView"
+Name = "Sysmon.SingleProcessCPU"
+Label = "CPU Usage"
+Plugin = "dygraphs.Graph"
+ForType = "Sysmon.Process"
+Select = {[ Name="Cpu"; Expression=avg@(avg(Cpu)); ]}
+GroupBy = { @intervals(`1m`) }
+Fill = true
+Stack = true
+YFormatAttribute = "Cpu"
+
+AdType = "Application.ChartView"
+Name = "Sysmon.SingleProcessMem"
+Label = "Memory Usage"
+Plugin = "dygraphs.Graph"
+ForType = "Sysmon.Process"
+Select = {\
+    [ Name="ResidentSize"; Expression=avg@(sum(ResidentSize)); ],\
+    [ Name="VirtualSize"; Expression=avg@(sum(VirtualSize)); ],\
+}
+GroupBy = { @intervals(`1m`) }
+Fill = false
+Stack = false
+YFormatAttribute = "ResidentSize"
+
+AdType = "Application.ChartView"
+Name = "Sysmon.CPUByUser"
+Label = "CPU Usage by User"
+Plugin = "dygraphs.Graph"
+ForType = "Sysmon.Process"
+Select = {[ Name="CPU"; Expression=avg@(avg(Cpu)); ]}
+GroupBy = { @intervals(`1m`) }
+SeriesId = "User"
+Fill = true
+Stack = true
+YFormatAttribute = "Cpu"

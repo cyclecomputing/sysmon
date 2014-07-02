@@ -1,0 +1,187 @@
+  PID USER       RSS    VSZ %CPU COMMAND         COMMAND
+    1 root      1044  19356  0.0 init            /sbin/init
+    2 root         0      0  0.0 kthreadd        [kthreadd]
+    3 root         0      0  0.0 migration/0     [migration/0]
+    4 root         0      0  0.0 ksoftirqd/0     [ksoftirqd/0]
+    5 root         0      0  0.0 migration/0     [migration/0]
+    6 root         0      0  0.0 watchdog/0      [watchdog/0]
+    7 root         0      0  0.0 migration/1     [migration/1]
+    8 root         0      0  0.0 migration/1     [migration/1]
+    9 root         0      0  0.0 ksoftirqd/1     [ksoftirqd/1]
+   10 root         0      0  0.0 watchdog/1      [watchdog/1]
+   11 root         0      0  0.0 events/0        [events/0]
+   12 root         0      0  0.0 events/1        [events/1]
+   13 root         0      0  0.0 cgroup          [cgroup]
+   14 root         0      0  0.0 khelper         [khelper]
+   15 root         0      0  0.0 netns           [netns]
+   16 root         0      0  0.0 async/mgr       [async/mgr]
+   17 root         0      0  0.0 pm              [pm]
+   18 root         0      0  0.0 xenwatch        [xenwatch]
+   19 root         0      0  0.0 xenbus          [xenbus]
+   20 root         0      0  0.0 sync_supers     [sync_supers]
+   21 root         0      0  0.0 bdi-default     [bdi-default]
+   22 root         0      0  0.0 kintegrityd/0   [kintegrityd/0]
+   23 root         0      0  0.0 kintegrityd/1   [kintegrityd/1]
+   24 root         0      0  0.0 kblockd/0       [kblockd/0]
+   25 root         0      0  0.0 kblockd/1       [kblockd/1]
+   26 root         0      0  0.0 ata_aux         [ata_aux]
+   27 root         0      0  0.0 ata_sff/0       [ata_sff/0]
+   28 root         0      0  0.0 ata_sff/1       [ata_sff/1]
+   29 root         0      0  0.0 ksuspend_usbd   [ksuspend_usbd]
+   30 root         0      0  0.0 khubd           [khubd]
+   31 root         0      0  0.0 kseriod         [kseriod]
+   32 root         0      0  0.0 md/0            [md/0]
+   33 root         0      0  0.0 md/1            [md/1]
+   34 root         0      0  0.0 md_misc/0       [md_misc/0]
+   35 root         0      0  0.0 md_misc/1       [md_misc/1]
+   36 root         0      0  0.0 linkwatch       [linkwatch]
+   37 root         0      0  0.0 khungtaskd      [khungtaskd]
+   38 root         0      0  0.0 kswapd0         [kswapd0]
+   39 root         0      0  0.0 ksmd            [ksmd]
+   40 root         0      0  0.0 aio/0           [aio/0]
+   41 root         0      0  0.0 aio/1           [aio/1]
+   42 root         0      0  0.0 crypto/0        [crypto/0]
+   43 root         0      0  0.0 crypto/1        [crypto/1]
+   48 root         0      0  0.0 kthrotld/0      [kthrotld/0]
+   49 root         0      0  0.0 kthrotld/1      [kthrotld/1]
+   51 root         0      0  0.0 khvcd           [khvcd]
+   52 root         0      0  0.0 kpsmoused       [kpsmoused]
+   53 root         0      0  0.0 usbhid_resumer  [usbhid_resumer]
+   88 root         0      0  0.0 kstriped        [kstriped]
+  194 root         0      0  0.0 jbd2/xvda1-8    [jbd2/xvda1-8]
+  195 root         0      0  0.0 ext4-dio-unwrit [ext4-dio-unwrit]
+  227 root         0      0  0.0 flush-202:0     [flush-202:0]
+  281 root       364  10680  0.0 udevd           /sbin/udevd -d
+  555 root         0      0  0.0 kauditd         [kauditd]
+  735 root       612   9120  0.0 dhclient        /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dhclient-eth0.pid eth0
+  773 root      5408 256192  0.0 rsyslogd        /sbin/rsyslogd -i /var/run/syslogd.pid -c 5
+  814 dbus       708  21404  0.0 dbus-daemon     dbus-daemon --system
+  848 68        1348  37620  0.0 hald            hald
+  849 root       752  20324  0.0 hald-runner     hald-runner
+  915 root       464  12264  0.0 superm          superm -i 10 -p /var/run/superm.pid --logfile /var/log/superm.log
+  936 root       872  13484  0.0 abrtd           /usr/sbin/abrtd
+  944 root       724  20496  0.0 crond           crond
+  950 root      3720 205992  0.1 superm          superm -i 10 -p /var/run/superm.pid --logfile /var/log/superm.log
+  951 root       624  11304  0.0 bash            /bin/bash
+  952 root       624  11304  0.0 bash            /bin/bash
+  959 root       308  21540  0.0 atd             /usr/sbin/atd
+  988 root       424   4064  0.0 mingetty        /sbin/mingetty /dev/tty1
+  990 root       424   4064  0.0 mingetty        /sbin/mingetty /dev/tty2
+  993 root       424   4064  0.0 mingetty        /sbin/mingetty /dev/tty3
+  995 root       424   4064  0.0 mingetty        /sbin/mingetty /dev/tty4
+  997 root       424   4064  0.0 mingetty        /sbin/mingetty /dev/tty5
+  999 root       424   4064  0.0 mingetty        /sbin/mingetty /dev/tty6
+ 1619 root         0      0  0.0 xfs_mru_cache   [xfs_mru_cache]
+ 1620 root         0      0  0.0 xfslogd/0       [xfslogd/0]
+ 1621 root         0      0  0.0 xfslogd/1       [xfslogd/1]
+ 1622 root         0      0  0.0 xfsdatad/0      [xfsdatad/0]
+ 1623 root         0      0  0.0 xfsdatad/1      [xfsdatad/1]
+ 1624 root         0      0  0.0 xfsconvertd/0   [xfsconvertd/0]
+ 1625 root         0      0  0.0 xfsconvertd/1   [xfsconvertd/1]
+ 1626 root         0      0  0.0 xfsalloc/0      [xfsalloc/0]
+ 1627 root         0      0  0.0 xfsalloc/1      [xfsalloc/1]
+ 1628 root         0      0  0.0 xfseofblocks/0  [xfseofblocks/0]
+ 1629 root         0      0  0.0 xfseofblocks/1  [xfseofblocks/1]
+ 1769 root         0      0  0.0 kdmflush        [kdmflush]
+ 1785 root         0      0  0.0 flush-253:0     [flush-253:0]
+ 1804 root         0      0  0.1 jbd2/dm-0-8     [jbd2/dm-0-8]
+ 1805 root         0      0  0.0 ext4-dio-unwrit [ext4-dio-unwrit]
+ 2115 rpc        676  18976  0.0 rpcbind         rpcbind
+ 2238 root       212  10676  0.0 udevd           /sbin/udevd -d
+ 2239 root         0      0  0.0 rpciod/0        [rpciod/0]
+ 2240 root         0      0  0.0 rpciod/1        [rpciod/1]
+ 2482 root       108  10472  0.0 rpc.rquotad     rpc.rquotad
+ 2486 root      1252  21916  0.0 rpc.mountd      rpc.mountd
+ 2491 root         0      0  0.0 lockd           [lockd]
+ 2492 root         0      0  0.0 nfsd4           [nfsd4]
+ 2493 root         0      0  0.0 nfsd4_callbacks [nfsd4_callbacks]
+ 2494 root         0      0  0.0 nfsd            [nfsd]
+ 2495 root         0      0  0.0 nfsd            [nfsd]
+ 2496 root         0      0  0.0 nfsd            [nfsd]
+ 2497 root         0      0  0.0 nfsd            [nfsd]
+ 2498 root         0      0  0.0 nfsd            [nfsd]
+ 2499 root         0      0  0.0 nfsd            [nfsd]
+ 2500 root         0      0  0.0 nfsd            [nfsd]
+ 2501 root         0      0  0.0 nfsd            [nfsd]
+ 2502 root         0      0  0.0 nfsd            [nfsd]
+ 2503 root         0      0  0.0 nfsd            [nfsd]
+ 2504 root         0      0  0.0 nfsd            [nfsd]
+ 2505 root         0      0  0.0 nfsd            [nfsd]
+ 2506 root         0      0  0.0 nfsd            [nfsd]
+ 2507 root         0      0  0.0 nfsd            [nfsd]
+ 2508 root         0      0  0.0 nfsd            [nfsd]
+ 2509 root         0      0  0.0 nfsd            [nfsd]
+ 2510 root         0      0  0.0 nfsd            [nfsd]
+ 2511 root         0      0  0.0 nfsd            [nfsd]
+ 2512 root         0      0  0.0 nfsd            [nfsd]
+ 2513 root         0      0  0.0 nfsd            [nfsd]
+ 2514 root         0      0  0.0 nfsd            [nfsd]
+ 2515 root         0      0  0.0 nfsd            [nfsd]
+ 2516 root         0      0  0.0 nfsd            [nfsd]
+ 2517 root         0      0  0.0 nfsd            [nfsd]
+ 2518 root         0      0  0.0 nfsd            [nfsd]
+ 2519 root         0      0  0.0 nfsd            [nfsd]
+ 2520 root         0      0  0.0 nfsd            [nfsd]
+ 2521 root         0      0  0.0 nfsd            [nfsd]
+ 2522 root         0      0  0.0 nfsd            [nfsd]
+ 2523 root         0      0  0.0 nfsd            [nfsd]
+ 2524 root         0      0  0.0 nfsd            [nfsd]
+ 2525 root         0      0  0.0 nfsd            [nfsd]
+ 2526 root         0      0  0.0 nfsd            [nfsd]
+ 2527 root         0      0  0.0 nfsd            [nfsd]
+ 2528 root         0      0  0.0 nfsd            [nfsd]
+ 2529 root         0      0  0.0 nfsd            [nfsd]
+ 2530 root         0      0  0.0 nfsd            [nfsd]
+ 2531 root         0      0  0.0 nfsd            [nfsd]
+ 2532 root         0      0  0.0 nfsd            [nfsd]
+ 2533 root         0      0  0.0 nfsd            [nfsd]
+ 2534 root         0      0  0.0 nfsd            [nfsd]
+ 2535 root         0      0  0.0 nfsd            [nfsd]
+ 2536 root         0      0  0.0 nfsd            [nfsd]
+ 2537 root         0      0  0.0 nfsd            [nfsd]
+ 2538 root         0      0  0.0 nfsd            [nfsd]
+ 2539 root         0      0  0.0 nfsd            [nfsd]
+ 2540 root         0      0  0.0 nfsd            [nfsd]
+ 2541 root         0      0  0.0 nfsd            [nfsd]
+ 2542 root         0      0  0.0 nfsd            [nfsd]
+ 2543 root         0      0  0.0 nfsd            [nfsd]
+ 2544 root         0      0  0.0 nfsd            [nfsd]
+ 2545 root         0      0  0.0 nfsd            [nfsd]
+ 2546 root         0      0  0.0 nfsd            [nfsd]
+ 2547 root         0      0  0.0 nfsd            [nfsd]
+ 2548 root         0      0  0.0 nfsd            [nfsd]
+ 2549 root         0      0  0.0 nfsd            [nfsd]
+ 2550 root         0      0  0.0 nfsd            [nfsd]
+ 2551 root         0      0  0.0 nfsd            [nfsd]
+ 2552 root         0      0  0.0 nfsd            [nfsd]
+ 2553 root         0      0  0.0 nfsd            [nfsd]
+ 2554 root         0      0  0.0 nfsd            [nfsd]
+ 2555 root         0      0  0.0 nfsd            [nfsd]
+ 2556 root         0      0  0.0 nfsd            [nfsd]
+ 2557 root         0      0  0.0 nfsd            [nfsd]
+ 2580 root       276  25164  0.0 rpc.idmapd      rpc.idmapd
+ 2670 root       940 118944  0.0 smbd            smbd -D
+ 2673 root       596 119460  0.0 smbd            smbd -D
+ 4247 sgeadmin  7108 154092  0.3 sge_qmaster     /sched/sge/sge-2011.11/bin/linux-x64/sge_qmaster
+ 4561 sgeadmin  1780  60928  0.1 sge_execd       /sched/sge/sge-2011.11/bin/linux-x64/sge_execd
+ 6809 ganglia   1284 228592  0.0 gmetad          /opt/ganglia/current/sbin/gmetad
+ 7187 ganglia   2676 154120  1.1 gmond           /opt/ganglia/current/sbin/gmond
+18463 root      1228  39236  0.0 crond           CROND
+18467 root      1056   9232  0.0 sh              /bin/sh -c /root/bootstrap/cron_wrapper.sh /mnt/cluster-init/scratch/submit_jobs.rb > /mnt/cluster-init/scratch/submit_jobs.out 2>&1
+18473 root      3860  28912  1.0 ruby            ruby /mnt/cluster-init/scratch/submit_jobs.rb
+18945 169      50704 1354004 0.0 java            /mnt/cycle_server/system/jre/bin/java -server -Xmx96M -DQPID_PORT=5672 -DQPID_JMX_ENABLED=false -DQPID_JMX_PORT=9099 -DQPID_RMI_ENABLED=false -DQPID_RMI_PORT=0 -DQPID_HOME=/mnt/cycle_server/system/qpid -DPNAME=QPBRKR -DQPID_WORK= -classpath /mnt/cycle_server/system/qpid/lib/qpid-all.jar:/mnt/cycle_server/system/qpid/lib/plugins/* -Damqj.read_write_pool_size=32 org.apache.qpid.server.Main -icp /mnt/cycle_server/system/qpid/etc/config.json -prop qpid.amqp_port= -prop qpid.jmx_port= -prop qpid.rmi_port= -prop qpid.work_dir= -st memory
+19044 169      124276 3241208 0.0 java           /mnt/cycle_server/system/jre/bin/java -Dderby.stream.error.file=/mnt/cycle_server/logs/derby.log -Dderby.system.home=/mnt/cycle_server/data -classpath /mnt/cycle_server/system/derby/lib/derby.jar:/mnt/cycle_server/system/derby/lib/derbynet.jar:/mnt/cycle_server/system/derby/lib/derbytools.jar:/mnt/cycle_server/system/derby/lib/derbyclient.jar org.apache.derby.drda.NetworkServerControl start
+21767 root      3832  94156  0.0 sshd            sshd: cyclecloud [priv]
+21769 250       1736  94156  0.0 sshd            sshd: cyclecloud@pts/0
+21770 250       1792 108340  0.0 bash            -bash
+21814 root      2604 169316  0.0 sudo            sudo su -
+21815 root      1556 141320  0.0 su              su -
+21816 root      1652  11472  0.0 bash            -bash
+23226 root       348  10432  0.0 jsvc            jsvc.exec -Xmx2048M -Dvisualvm.display.name=CycleServer -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/mnt/cycle_server/logs -Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true -XX:MaxPermSize=128M -jvm server -home /mnt/cycle_server/system/jre -user cycle_server -classpath :/mnt/cycle_server/system/tomcat/bin/bootstrap.jar:/mnt/cycle_server/system/tomcat/bin/commons-logging-api.jar -pidfile /mnt/cycle_server/system/tomcat/.tomcat_pid -outfile /mnt/cycle_server/logs/catalina.out -errfile /mnt/cycle_server/logs/catalina.err -Dcatalina.home=/mnt/cycle_server/system/tomcat -Dcatalina.base=/mnt/cycle_server/system/tomcat -Djava.io.tmpdir=/mnt/cycle_server/system/tomcat/temp -Dcycle_server.home=/mnt/cycle_server -Duser.dir=/mnt/cycle_server org.apache.catalina.startup.Bootstrap start
+23227 169      2340004 4614268 11.2 jsvc         jsvc.exec -Xmx2048M -Dvisualvm.display.name=CycleServer -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/mnt/cycle_server/logs -Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true -XX:MaxPermSize=128M -jvm server -home /mnt/cycle_server/system/jre -user cycle_server -classpath :/mnt/cycle_server/system/tomcat/bin/bootstrap.jar:/mnt/cycle_server/system/tomcat/bin/commons-logging-api.jar -pidfile /mnt/cycle_server/system/tomcat/.tomcat_pid -outfile /mnt/cycle_server/logs/catalina.out -errfile /mnt/cycle_server/logs/catalina.err -Dcatalina.home=/mnt/cycle_server/system/tomcat -Dcatalina.base=/mnt/cycle_server/system/tomcat -Djava.io.tmpdir=/mnt/cycle_server/system/tomcat/temp -Dcycle_server.home=/mnt/cycle_server -Duser.dir=/mnt/cycle_server org.apache.catalina.startup.Bootstrap start
+26260 root       616  66604  0.0 sshd            /usr/sbin/sshd
+26439 root       992  13376  0.0 ps              ps axww -o pid,user,rss,vsz,pcpu,ucomm,command
+30900 root      4172  96236  0.0 sshd            sshd: cyclecloud [priv]
+30902 250       1788  96236  0.0 sshd            sshd: cyclecloud 
+30903 root      4180  96236  0.0 sshd            sshd: cyclecloud [priv]
+30905 250       1792  96236  0.0 sshd            sshd: cyclecloud

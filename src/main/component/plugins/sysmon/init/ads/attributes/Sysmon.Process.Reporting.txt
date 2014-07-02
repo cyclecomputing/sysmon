@@ -1,0 +1,22 @@
+Source = avg@(sum(ResidentSize))
+MetricParams = [Attr="ResidentSize";IntegrateFunc="avg@";SampleFunc="sum"]
+ForName = "ResidentMemory"
+Label = "Resident Memory"
+Disabled = false
+
+Source = avg@(avg(Cpu))
+MetricParams = [Attr="Cpu";IntegrateFunc="avg@";SampleFunc="avg"]
+ForName = "AvgCpuUsage"
+Label = "CPU Usage"
+Disabled = false
+
+Source = avg@(count(AdType))
+MetricParams = [Attr="AdType";IntegrateFunc="avg@";SampleFunc="count"]
+ForName = "AvgProcessCount"
+Label = "# Processes"
+Disabled = false
+
+Source = User
+ForName = "User"
+Label = "User"
+Disabled = false

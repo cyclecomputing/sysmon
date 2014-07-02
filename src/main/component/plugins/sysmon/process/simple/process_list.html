@@ -1,0 +1,42 @@
+{% block Title %}Process List{% endblock %}
+
+
+{% block Header %}
+<link rel="stylesheet" href='{%=page.alterStaticUrl("static/sysmon/process/simple/process_list/list.css")%}' type="text/css">
+{% endblock %}
+
+
+{% block Body %}
+
+<div class="scrollContainer">
+    <table class="process-list">
+        <thead>
+            <tr>
+                <th>PID</th>
+                <th>Name</th>
+                <th>User</th>
+                <th>Cpu</th>
+                <th>Resident Size</th>
+                <th>Virtual Size</th>
+                <th>Command</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for process in this.processes %}
+                <tr>
+                    <td><a href="/sysmon/processes/{%= process.PID %}">{%= process.PID %}</a></td>
+                    <td class="process-name">{%= process.Name %}</td>
+                    <td>{%= process.User %}</td>
+                    <td>{%= round(process.Cpu * 100) %}%</td>
+                    <td>{%= round(process.ResidentSize / 1024) %} MB</td>
+                    <td>{%= round(process.VirtualSize / 1024) %} MB</td>
+                    <td title="{%=process.Command%}">
+                        {%= ifThenElse(size(process.Command) > 60, strcat(substr(process.Command, 0, 60), "..."), process.Command) %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

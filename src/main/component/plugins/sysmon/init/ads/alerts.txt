@@ -1,0 +1,12 @@
+AdType = "Application.AlertRule"
+Disabled = false
+WidgetPlugin = "pico.alert.QueryRuleForm"
+SendEmail = false
+Label = "High CPU"
+Plugin = "cycle.alert.query_rule"
+Subject = "{%%size(Results)%} process(es) using high amount of CPU"
+Name = "Sysmon.Process.HighCPU"
+AlertOnChange = true
+Query = "SELECT Name, PID FROM Sysmon.Process WHERE Cpu > 0.90"
+Level = 2
+Body = "The following processes are using high amounts of CPU:\n\n<div>\n{% for Process in Results %}\n    <h3>{%=Process.Name%}</h3>\n    <ul>\n        <li>PID: {%=Process.PID%}</li>\n        <li>User: {%=Process.User%}</li>\n        <li>CPU %: {%=Process.Cpu%}</li>\n    </ul>\n{% endfor %}\n</div>"

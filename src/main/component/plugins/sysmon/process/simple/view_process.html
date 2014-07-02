@@ -1,0 +1,27 @@
+{% block Title %}CPU Usage for Process: {%= this.process.Name %} - <a href="/sysmon/processes_simple">Back to process list</a>{% endblock %}
+
+{% block Scripts %}<script>
+
+require([
+    "pico/widget",
+    "pico/layout",
+    "pico/expr"
+], function(pwidget, playout, pexpr) {
+
+    {% if this.process.PID isnt undefined %}
+        var pid = {%= this.process.PID %};
+    {% else %}
+        var pid = null;
+    {% endif %}
+
+    pwidget.find$({ name: "Sysmon.SingleProcessCPUChart" })
+    .then(function(chart) {
+        // Clear the chart title to it doesn't overwrite our custom one above
+        chart.setTitle(null);
+        chart.setFilter(pexpr.makeAttributeEqualsValue("PID", pid));
+        playout.loadBody$(chart);
+    });
+
+});
+
+</script>{% endblock %}

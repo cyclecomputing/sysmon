@@ -1,0 +1,6 @@
+Derived = true
+System = "Sysmon"
+FromType = "Sysmon.Process"
+KeyAttributes = "User"
+Reporting = true
+Interval = `15:00`

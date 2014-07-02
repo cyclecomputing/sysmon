@@ -1,0 +1,42 @@
+AdType = "View"
+ForType = "Sysmon.Process"
+Name = "By Name"
+Select = { \
+    [Expression=Name; Name="Name"], \
+    [Expression=count(PID); Name="Process Count"], \
+    [Expression=sum(Cpu); Name="Total CPU"], \
+    [Expression=sum(ResidentSize); Name="Total Resident Size"], \
+    [Expression=sum(VirtualSize); Name="Total Virtual Size"] \
+}
+GroupBy = {Name}
+Id = #53b2fcc3-0031-5fc805e6a6d5-0
+Owner = "*"
+
+AdType = "View"
+ForType = "Sysmon.Process"
+Name = "By User"
+Select = { \
+    [Expression=User; Name="User"], \
+    [Expression=count(PID); Name="Process Count"], \
+    [Expression=sum(Cpu); Name="Total CPU"], \
+    [Expression=sum(ResidentSize); Name="Total Resident Size"], \
+    [Expression=sum(VirtualSize); Name="Total Virtual Size"] \
+}
+GroupBy = {user}
+Id = #4d35eed6-0001-175e05722016-1
+Owner = "*"
+
+AdType = "View"
+ForType = "Sysmon.Process"
+Name = "Details"
+Select = { \
+    [Expression=PID; Name="PID"], \
+    [Expression=Name; Name="Name"], \
+    [Expression=User; Name="User"], \
+    [Expression=Cpu; Name="Cpu"], \
+    [Expression=ResidentSize; Name="Resident Size"], \
+    [Expression=VirtualSize; Name="Virtual Size"], \
+    [Expression=Command; Name="Command"] \
+}
+Id = #4d35f257-0001-175e05722016-1
+Owner = "*"

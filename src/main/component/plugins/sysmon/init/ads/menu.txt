@@ -1,0 +1,25 @@
+Group = "main"
+System = "Sysmon"
+Url = "/sysmon/processes"
+Order = 160
+AdType = "Application.Menu"
+Text = "Sysmon"
+Name = "sysmon"
+
+Group = "main"
+System = "Sysmon"
+Url = "/sysmon/processes_simple"
+Order = 100
+AdType = "Application.Menu"
+Text = "Process List (Simple)"
+Name = "sysmon_processes_simple"
+ParentItem = "sysmon"
+
+Group = "main"
+System = "Sysmon"
+Url = "/sysmon/processes"
+Order = 110
+AdType = "Application.Menu"
+Text = "Process List (Advanced)"
+Name = "sysmon_processes"
+ParentItem = "sysmon"

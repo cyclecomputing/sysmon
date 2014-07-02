@@ -1,0 +1,24 @@
+ForName = "User"
+Description = "The name of the user who owns this process"
+
+ForName = "Cpu"
+Label = "CPU Usage"
+Description = "The percentage of CPU used by this process"
+Format = "Percentage"
+Color = "2CA02C"
+
+ForName = "ResidentSize"
+Label = "Resident Size"
+Description = "The amount of physical memory currently used by this process"
+Format = "Kilobyte"
+Color = "DD4444"
+
+ForName = "VirtualSize"
+Label = "Virtual Size"
+Description = "The amount of virtual memory used by this process"
+Format = "Kilobyte"
+Color = "0277B4"
+
+ForName = "Command"
+Format = "String"
+DefaultFormatter = "String.Preformatted"

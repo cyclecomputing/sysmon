@@ -1,0 +1,2 @@
+# This file ignores __init__.py files in the plugins directory. It should be checked in.
+__init__.py

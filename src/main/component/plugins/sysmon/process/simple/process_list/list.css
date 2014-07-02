@@ -1,0 +1,20 @@
+.process-list th {
+    font-weight: bold;
+    background-color: #215C9B;
+    color: white;
+    padding: 5px;
+}
+
+.process-list td {
+    background-color: #DDDDDD;
+    padding: 5px;
+}
+
+.process-list a {
+    color: blue;
+    cursor: pointer;
+}
+
+.process-name {
+    font-weight: bold;
+}

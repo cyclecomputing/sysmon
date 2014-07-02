@@ -1,0 +1,17 @@
+{% block Title %}Processes{% endblock %}
+
+{% block Scripts %}<script>
+
+require([
+    "pico/layout",
+    "pico/widget"
+], function(playout, pwidget) {
+
+    pwidget.find$({ name: "Sysmon.ProcessTable" })
+    .then(function(table) {
+        playout.loadBody$(table);
+    });
+
+});
+
+</script>{% endblock %}

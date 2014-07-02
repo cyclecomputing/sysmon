@@ -1,0 +1,42 @@
+AdType = "Application.Widget"
+Name = "Sysmon.SingleProcessCPUChart"
+Title = "CPU Usage"
+ForType = "Sysmon.Process"
+Plugin = "pico.chart.Chart"
+ChartView = "Sysmon.SingleProcessCPU"
+
+AdType = "Application.Widget"
+Name = "Sysmon.SingleProcessMemChart"
+Title = "Memory Usage"
+ForType = "Sysmon.Process"
+Plugin = "pico.chart.Chart"
+ChartView = "Sysmon.SingleProcessMem"
+
+AdType = "Application.Widget"
+Name = "Sysmon.CPUByUserChart"
+Title = "CPU Usage by User"
+ForType = "Sysmon.Process"
+Plugin = "pico.chart.Chart"
+ChartView = "Sysmon.CPUByUser"
+
+AdType = "Application.Widget"
+Name = "Sysmon.ProcessTable"
+ForType = "Sysmon.Process"
+Plugin = "pico.widget.SplitAdTable"
+BuiltInActions = [Show=false]
+DefaultAction = "sysmon.process.show"
+SummaryTable = [View="By User"]
+
+AdType = "Application.Widget"
+Name = "Sysmon.ProcessDetail"
+ForType = "Sysmon.Process"
+Plugin = "pico.widget.AttributeValueList"
+CssClass = "big-data-list"
+LabelSeparator = ":"
+Attributes = { \
+    [Name="Command"], \
+    [Name="User"], \
+    [Name="Cpu"], \
+    [Name="ResidentSize"], \
+    [Name="VirtualSize"], \
+}
