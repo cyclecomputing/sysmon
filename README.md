@@ -16,7 +16,7 @@ user interface components and how to create a task that runs on a timer.
 
 Building this component requires [gradle](http://gradle.org) 1.8 or higher and [Java](https://www.java.com) 1.7 or higher.
 
-After installing gradle and CycleServer, you will need to configure gradle by running:
+After installing Gradle and CycleServer, you will need to configure gradle by running:
    
     $ cd cycle_server_install 
     $ sudo util/devel initialize
