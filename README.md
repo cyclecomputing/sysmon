@@ -14,7 +14,7 @@ Requirements
 This component requires CycleServer 4.5 or higher. It demonstrates how to create basic 
 user interface components and how to create a task that runs on a timer.
 
-Building this component requires [gradle](http://gradle.org)
+Building this component requires [gradle](http://gradle.org) 1.8 or higher and [Java](https://www.java.com) 1.7 or higher.
 
 After installing gradle and CycleServer, you will need to configure gradle by running:
    
