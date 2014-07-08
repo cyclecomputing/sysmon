@@ -22,7 +22,7 @@ ChartView = "Sysmon.CPUByUser"
 AdType = "Application.Widget"
 Name = "Sysmon.ProcessTable"
 ForType = "Sysmon.Process"
-Plugin = "pico.widget.SplitAdTable"
+Plugin = "pico.widget.SplitDataTable"
 BuiltInActions = [Show=false]
 DefaultAction = "sysmon.process.show"
 SummaryTable = [View="By User"]
