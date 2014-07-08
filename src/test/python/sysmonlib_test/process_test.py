@@ -10,7 +10,7 @@ class Test(plugintest.TestCase):
             "ps_output.txt"), 'r')
         processes = process.parse(f.read())
 
-        # 139 Processes Parsed
+        # 186 Processes Parsed
         self.assertEquals(186, len(processes))
 
         # Spot check some individual processes
