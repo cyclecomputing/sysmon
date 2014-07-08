@@ -5,7 +5,7 @@ Label = "Kill Process"
 ActionPhrase = "Killing these processes"
 ConfirmationMessage = "Are you sure you want to kill the selected process(es)?"
 Plugin = "sysmon.process.control"
-AdsRequired = "any"
+AdsRequired = "some"
 
 AdType = "Application.Action"
 ForType = "Sysmon.Process"
