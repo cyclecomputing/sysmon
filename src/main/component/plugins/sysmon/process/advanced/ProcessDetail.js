@@ -95,7 +95,7 @@ var ProcessDetail = declare([WrappedWidget], {
  */
 ProcessDetail.handleShowAction = function(properties) {
     var type = properties.type;
-    var filter = properties.selection;
+    var filter = properties.filter;
 
     datastore.find$(type.getAsString("ForType"), filter)
     .then(function(result) {
