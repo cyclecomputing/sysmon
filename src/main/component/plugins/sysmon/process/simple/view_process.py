@@ -8,7 +8,8 @@ def setup(request, response, context):
         pid = None
 
     if pid:
-        result = datastore.queryAds(
+        result = datastore.query(
             "SELECT * FROM Sysmon.Process WHERE PID === %d" % pid)
         if len(result) > 0:
-            context.setAd("Process", result[0])
+            context.setAd(
+                "Process", result[0])

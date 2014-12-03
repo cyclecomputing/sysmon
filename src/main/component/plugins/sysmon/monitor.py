@@ -6,7 +6,7 @@ from sysmonlib import process
 def run(timer):
     result = process.monitor()
 
-    datastore.synchronizeAds(result, 
+    datastore.sync(result, 
         expressions.parse("AdType == \"Sysmon.Process\""))
 
     logger.info("Stored %s process samples" % len(result))
