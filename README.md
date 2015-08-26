@@ -23,7 +23,7 @@ After installing Gradle and CycleServer, you will need to configure Gradle by ru
 
 Building and Deploying
 ----------------------
-To build the component
+To build the component, switch to this repository's root directory and run:
 
     $ gradle clean build
     
